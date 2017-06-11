@@ -1,144 +1,234 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>My Page</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <title>My Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <style>.loaderArea{background:url(../images/home.jpg);background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;overflow:hidden;margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;z-index:100000}.loader{margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;-moz-transform:translateY(-50%);-moz-transform:translateX(-50%);-ms-transform:translateY(-50%);-ms-transform:translateX(-50%);-webkit-transform:translateY(-50%);-webkit-transform:translateX(-50%);-o-transform:translateY(-50%);-o-transform:translateX(-50%);transfrom:translateY(-50%);transform:translateX(-50%);border:16px solid #f3f3f3;border-radius:50%;border-top:16px solid transparent;border-bottom:16px solid transparent;width:120px;height:120px;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
+    <script src="preloader.js" charset="utf-8"></script>
+    <script>
+        $(window).on('load', function () {
+            $preloader = $('.loaderArea'),
+                $loader = $preloader.find('.loader');
+            $loader.fadeOut();
+            $preloader.delay(400).fadeOut('slow');
+        });
+    </script>
 </head>
 <body>
-<!-- NAVBAR -->
+<div class="loaderArea">
+    <div class="loader"></div>
+</div>
 <nav class="navbar navbar-default navbar-fixed-top navbar-scroll" role="navigation">
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="icon-bar"></span> 
-<span class="icon-bar"></span> 
-<span class="icon-bar"></span>
-</button> 
-<a class="navbar-brand" href="/">Marlik Almighty</a></div>
-<div class="collapse navbar-collapse navbar-ex1-collapse">
-<ul class="nav navbar-nav navbar-right">
-<li><a href="https://github.com/MarlikAlmighty/" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-<li><a href="https://vk.com/marlikalmighty/" target="_blank"><i class="fa fa-vk fa-2x"></i></a></li>
-<li><a href="https://t.me/MarlikAlmighty/" target="_blank"><i class="fa fa-telegram fa-2x"></i></a></li>
-<li><a href="https://www.facebook.com/MarlikAlmighty/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-</ul></div></div></nav> 
-<!-- NAVBAR -->
-<!-- HOME -->
-<section id="home" class="home-section">
-<div class="v-align">
-<div class="slogan">Sites, Web-Design, DevOps</div>     
-<div class="buttons">
-<span><a href="#services" class="btn-u btn-brd btn-brd-hover btn-u-light">Rates</a></span> 
-<span><a href="#contacts" class="btn-u btn-brd btn-brd-hover btn-u-light">Contacts</a></span>
-</div>
-</div>
-</section>
-<!-- HOME -->
-<!-- SERVICES -->
-<section id="services" class="services-section">
-<div class="container">
-<div class="title-v1"><h2>Cost of work</h2>
-<p>The cost of work may vary</p>
-</div>
-<div class="row content">
-<div class="col-md-6 col-sm-6">
-<div class="panel no-rounded">
-<div class="panel-heading no-rounded">
-<h3 class="heading-panel">Single page Landing</h3>
-</div>
-<div class="panel-body">
-<ul>
-<li>Template</li>
-<li>Adaptive layout</li>
-<li>Multiple sections</li>
-<li>Feedback form</li>
-<li>Call from site</li>
-<li>Registration in catalogs</li>
-<li>Statistics, counters</li>
-<li><strong>From 300 dollars</strong></li></ul>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-sm-6">
-<div class="panel no-rounded">
-<div class="panel-heading no-rounded">
-<h3 class="heading-panel">The site of the company</h3></div>
-<div class="panel-body">
-<ul>
-<li>Unique design</li>
-<li>Cross-browser layout</li>
-<li>Up to 20 pages</li>
-<li>Feedback form</li>
-<li>Call from site</li>
-<li>Registration in catalogs</li>
-<li>Statistics, counters</li>
-<li><strong>From 600 dollars</strong></li></ul>
-</div></div></div></div></div></section>
-<!-- SERVICES -->
-<!-- CONTACTS -->
-<section id="contacts" class="contacts-section">
-        <div class="container content-lg">
-            <div class="title-v1">
-                <h2>Send Message</h2>
-                <p>I will reply within 24 hours.</p>
-            </div>
-
-            <div class="row contacts-in">
-                <div class="col-md-4 md-margin-bottom-40">
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-home"></i>Ryazan, Radisheva, 28</li>
-                        <li><i class="fa fa-phone"></i> +883 510 001 398 665</li>
-                        <li><i class="fa fa-telegram"></i><a href="https://t.me/MarlikAlmighty/" target="_blank">Marlik Almighty</a></li>
-                        <li><i class="fa fa-globe"></i> <a href="http://marlikalmighty.github.io/">marlikalmighty.github.io</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-8">
-                    <form>
-                        <fieldset>
-                            <label>Name <span class="color-red">*</span></label>
-                            <div class="row">
-                                <div class="col-md-11 margin-bottom-20 col-md-offset-0">
-                                    <div>
-                                        <input type="text" name="name" id="name" class="form-control">
-                                    </div>
-                                </div>                
-                            </div>
-                            
-                            <label>E-mail <span class="color-red">*</span></label>
-                            <div class="row">
-                                <div class="col-md-11 margin-bottom-20 col-md-offset-0">
-                                    <div>
-                                        <input type="text" name="email" id="email" class="form-control">
-                                    </div>
-                                </div>                
-                            </div>
-                            
-                            <label>Message <span class="color-red">*</span></label>
-                            <div class="row">
-                                <div class="col-md-11 margin-bottom-20 col-md-offset-0">
-                                    <div>
-                                        <textarea rows="8" name="message" id="message" class="form-control"></textarea>
-                                    </div>
-                                </div>                
-                            </div>
-                            
-                            <p><button type="submit" class="btn-u btn-brd btn-brd-hover btn-u-dark" onclick="alert('Sorry, I do not know how to send a message yet');return false">Send</button></p>
-                        </fieldset>                     
-                    </form>                     
-                </div>
-                
-            </div>            
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Marlik Almighty</a></div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#rates">RATES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#aboutme">ABOUT ME</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
         </div>
-    </section>
-<!-- CONTACTS -->
-<script src="vendor.js" charset="utf-8"></script>
+    </div>
+</nav>
+<section id="home" class="home">
+    <div class="home__vertalign">
+        <div class="home__slogan">Sites, Web-Design, DevOps</div>
+        <div class="home__buttons">
+            <span><a href="#rates" class="btn-u btn-brd btn-brd-hover btn-u-light">Rates</a></span>
+            <span><a href="#contacts" class="btn-u btn-brd btn-brd-hover btn-u-light">Contacts</a></span>
+        </div>
+    </div>
+</section>
+<section id="rates" class="rates">
+    <div class="container">
+        <div class="rates__title__v1"><h2>Cost of work</h2>
+            <p>The cost of work may vary</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel no-rounded">
+                    <div class="panel-heading no-rounded">
+                        <h3 class="heading-panel">Single page Landing</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Template</li>
+                            <li>Adaptive layout</li>
+                            <li>Multiple sections</li>
+                            <li>Feedback form</li>
+                            <li>Call from site</li>
+                            <li>Registration in catalogs</li>
+                            <li>Statistics, counters</li>
+                            <li><strong>From 300 dollars</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel no-rounded">
+                    <div class="panel-heading no-rounded">
+                        <h3 class="heading-panel">The site of the company</h3></div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Unique design</li>
+                            <li>Cross-browser layout</li>
+                            <li>Up to 20 pages</li>
+                            <li>Feedback form</li>
+                            <li>Call from site</li>
+                            <li>Registration in catalogs</li>
+                            <li>Statistics, counters</li>
+                            <li><strong>From 600 dollars</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="portfolio__title__v1"><h2>MY JOBS</h2>
+            <p>This is only part of the work</p>
+        </div>
+        <div class="row row__for__wow">
+            <div class="col-md-4">
+                <figure class="effect-wow">
+                    <img src="images/1.jpg" alt="img1"/>
+                    <figcaption>
+                        <h2>Your <span>Website</span></h2>
+                        <p>HTML5 CSS3 Bootstrap Javascript</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="effect-wow">
+                    <img src="images/2.jpg" alt="img2"/>
+                    <figcaption>
+                        <h2>Your <span>Website</span></h2>
+                        <p>HTML5 CSS3 Bootstrap Javascript</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="effect-wow">
+                    <img src="images/3.jpg" alt="img3"/>
+                    <figcaption>
+                        <h2>Your <span>Website</span></h2>
+                        <p>HTML5 CSS3 Bootstrap Javascript</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <figure class="effect-wow">
+                    <img src="images/4.jpg" alt="img4"/>
+                    <figcaption>
+                        <h2>Your <span>Website</span></h2>
+                        <p>HTML5 CSS3 Bootstrap Javascript</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="effect-wow">
+                    <img src="images/5.jpg" alt="img5"/>
+                    <figcaption>
+                        <h2>Your <span>Website</span></h2>
+                        <p>HTML5 CSS3 Bootstrap Javascript</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure class="effect-wow">
+                    <img src="images/6.jpg" alt="img6"/>
+                    <figcaption>
+                        <h2>Your <span>Website</span></h2>
+                        <p>HTML5 CSS3 Bootstrap Javascript</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="aboutme" class="aboutme">
+    <div class="container">
+        <div class="aboutme__title__v1"><h2>ABOUT ME</h2>
+            <p>My abilities, skills and resume</p>
+        </div>
+
+    </div>
+</div>
+<section id="contacts" class="contacts">
+    <div class="container">
+        <div class="contacts__title__v1"><h2>SEND MESSAGE</h2>
+            <p>I will reply within 24 hours.</p>
+        </div>
+        <div class="row contacts-in">
+            <div class="col-md-4">
+                <ul>
+                    <li><i class="fa fa-home"></i> Ryazan, Radisheva, 28</li>
+                    <li><i class="fa fa-phone"></i> +883 510 001 398 665</li>
+                    <li><i class="fa fa-globe"></i><a
+                            href="http://marlikalmighty.github.io/"> marlikalmighty.github.io</a></li>
+                    <li><i class="fa fa-telegram"></i><a href="https://t.me/MarlikAlmighty/"
+                                                         target="_blank"> Telegram</a></li>
+                    <li><a href="https://github.com/MarlikAlmighty/" target="_blank"><i
+                            class="fa fa-github fa-2x"></i> GitHub</a></li>
+                    <li><a href="https://vk.com/marlikalmighty/" target="_blank"><i class="fa fa-vk fa-2x"></i>
+                        VKontakte</a>
+                    </li>
+                    <li><a href="https://www.facebook.com/MarlikAlmighty/" target="_blank"><i
+                            class="fa fa-facebook fa-2x"></i> FaceBook</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <form name="myform">
+                    <label>Name <span class="color-red">*</span></label>
+
+                    <input type="text" name="firstname" id="firstname" class="form-control no-rounded" maxlength="100"
+                           data-toggle="tooltip" title="The form is not active" required><span
+                        id="nametips"></span>
+
+                    <label>E-mail <span class="color-red">*</span></label>
+
+                    <input type="email" name="mail" id="mail" class="form-control no-rounded" maxlength="100"
+                           data-toggle="tooltip" title="The form is not active" required><span
+                        id="emailtips"></span>
+
+                    <label>Message <span class="color-red">*</span></label>
+
+                    <textarea rows="8" name="message" id="message" class="form-control no-rounded"
+                              maxlength="1000" data-toggle="tooltip" title="The form is not active"></textarea><span
+                        id="messagetips"></span>
+
+                    <button type="submit" class="btn-u btn-brd btn-brd-hover btn-u-dark"
+                            onclick="alert('Sorry, I do not know how to send a message yet');return false"
+                            data-toggle="tooltip" title="The form is not active">Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="site.js" charset="utf-8"></script>
 </body>
 </html>
