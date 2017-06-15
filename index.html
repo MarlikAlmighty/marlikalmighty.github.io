@@ -8,62 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-    <style>.loaderArea {
-        background: #000;
-        overflow: hidden;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 100000
-    }
-
-    .loader {
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        -moz-transform: translateY(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateY(-50%);
-        -ms-transform: translateX(-50%);
-        -webkit-transform: translateY(-50%);
-        -webkit-transform: translateX(-50%);
-        -o-transform: translateY(-50%);
-        -o-transform: translateX(-50%);
-        transfrom: translateY(-50%);
-        transform: translateX(-50%);
-        border: 16px solid #f3f3f3;
-        border-radius: 50%;
-        border-top: 16px solid transparent;
-        border-bottom: 16px solid transparent;
-        width: 120px;
-        height: 120px;
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite
-    }
-
-    @-webkit-keyframes spin {
-        0% {
-            -webkit-transform: rotate(0deg)
-        }
-        100% {
-            -webkit-transform: rotate(360deg)
-        }
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg)
-        }
-        100% {
-            transform: rotate(360deg)
-        }
-    }</style>
+    <style>.loaderArea{background:#000;overflow:hidden;margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;z-index:100000}.loader{margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;-moz-transform:translateY(-50%);-moz-transform:translateX(-50%);-ms-transform:translateY(-50%);-ms-transform:translateX(-50%);-webkit-transform:translateY(-50%);-webkit-transform:translateX(-50%);-o-transform:translateY(-50%);-o-transform:translateX(-50%);transfrom:translateY(-50%);transform:translateX(-50%);border:16px solid #f3f3f3;border-radius:50%;border-top:16px solid transparent;border-bottom:16px solid transparent;width:120px;height:120px;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
     <script src="preloader.js" charset="utf-8"></script>
     <script>
         $(window).on('load', function () {
@@ -75,9 +20,7 @@
     </script>
 </head>
 <body>
-<div class="loaderArea">
-    <div class="loader"></div>
-</div>
+<div class="loaderArea"><div class="loader"></div></div>
 <nav class="navbar navbar-default navbar-fixed-top navbar-scroll" role="navigation">
     <div class="container">
         <div class="navbar-header">
