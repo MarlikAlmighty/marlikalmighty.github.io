@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Marlik Almighty</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="Cache-Control" content="max-age=600,must-revalidate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+    <meta http-equiv="Cache-Control" content="max-age=600">
+    -->
     <meta name="keywords" content="Адаптивные, кроссбраузерные, сайты">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
@@ -21,7 +23,9 @@
     </script>
 </head>
 <body>
-<div class="loaderArea"><div class="loader"></div></div>
+<div class="loaderArea">
+    <div class="loader"></div>
+</div>
 <nav class="navbar navbar-default navbar-fixed-top navbar-scroll">
     <div class="container">
         <div class="navbar-header">
@@ -44,14 +48,15 @@
 </nav>
 <section id="home" class="home">
     <div class="container">
-    <div class="home__vertalign">
-        <div class="home__slogan"><h2>Sites, Web-Design, DevOps</h2></div>
-        <div class="home__buttons">
-            <span><a href="#rates" class="btn-u btn-brd btn-brd-hover btn-u-light">Rates</a></span>
-            <span><a href="#contacts" class="btn-u btn-brd btn-brd-hover btn-u-light">Contacts</a></span>
+        <div class="home__vertalign">
+            <div class="home__slogan"><h1>Sites, Web-Design, DevOps</h1></div>
+            <div class="home__buttons">
+                <span><a href="#rates" class="btn-u btn-brd btn-brd-hover btn-u-light">Rates</a></span>
+                <span><a href="#contacts" class="btn-u btn-brd btn-brd-hover btn-u-light">Contacts</a></span>
+            </div>
         </div>
     </div>
-    </div>
+    <div class="section__footer"></div>
 </section>
 <section id="rates" class="rates">
     <div class="container">
@@ -98,6 +103,7 @@
             </div>
         </div>
     </div>
+    <div class="section__footer"></div>
 </section>
 <section id="portfolio" class="portfolio">
     <div class="container">
@@ -106,48 +112,98 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="col__img hvr-grow">
+                <figure class="effect-ruby img-responsive">
                     <img src="images/1.jpg" alt="1.jpg">
-                </div>
+                    <figcaption>
+                        <h2>Someone's site</h2>
+                        <p>HTML5 CSS3 Javascript</p>
+                    </figcaption>
+                </figure>
             </div>
             <div class="col-md-4">
-                <div class="col__img hvr-grow">
+                <figure class="effect-ruby img-responsive">
                     <img src="images/2.jpg" alt="2.jpg">
-                </div>
+                    <figcaption>
+                        <h2>Someone's site</h2>
+                        <p>HTML5 CSS3 Javascript</p>
+                    </figcaption>
+                </figure>
             </div>
             <div class="col-md-4">
-                <div class="col__img hvr-grow">
+                <figure class="effect-ruby img-responsive">
                     <img src="images/3.jpg" alt="3.jpg">
-                </div>
+                    <figcaption>
+                        <h2>Someone's site</h2>
+                        <p>HTML5 CSS3 Javascript</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="col__img hvr-grow">
+                <figure class="effect-ruby img-responsive">
                     <img src="images/4.jpg" alt="4.jpg">
-                </div>
+                    <figcaption>
+                        <h2>Someone's site</h2>
+                        <p>HTML5 CSS3 Javascript</p>
+                    </figcaption>
+                </figure>
             </div>
             <div class="col-md-4">
-                <div class="col__img hvr-grow">
+                <figure class="effect-ruby img-responsive">
                     <img src="images/5.jpg" alt="5.jpg">
-                </div>
+                    <figcaption>
+                        <h2>Someone's site</h2>
+                        <p>HTML5 CSS3 Javascript</p>
+                    </figcaption>
+                </figure>
             </div>
             <div class="col-md-4">
-                <div class="col__img hvr-grow">
+                <figure class="effect-ruby img-responsive">
                     <img src="images/6.jpg" alt="6.jpg">
-                </div>
+                    <figcaption>
+                        <h2>Someone's site</h2>
+                        <p>HTML5 CSS3 Javascript</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
+    <div class="section__footer"></div>
 </section>
-<div id="aboutme" class="aboutme">
+<section id="aboutme" class="aboutme">
     <div class="container">
         <div class="aboutme__title__v1"><h2>ABOUT ME</h2>
-            <p>My abilities, skills and resume</p>
+            <p>My skills & resume</p>
         </div>
-
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-responsive">
+                    <img src="images/aboutme.jpeg" alt="aboutme.jpeg">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="aboutme__caption">
+                <h3>Hello I am Marlik</h3>
+                <h4>Full-Stack Web Developer</h4>
+                </div>
+                <p>I like to create sites. I know HTML5, CSS3, Javascript, jQuery. In my work, I often use some
+                    parts of the Bootstrap framework. As a backend, I use Perl, and in particular the
+                    Mojolicious framework. I use different DBI, worked with SQLite, MySQL and MongoDB.
+                    I prefer to work remotely and only at a fixed rate.</p>
+                <ul class="social-icon">
+                    <a href="https://t.me/MarlikAlmighty/" target="_blank"><i class="fa fa-telegram"
+                                                                              aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/MarlikAlmighty/" target="_blank"><i class="fa fa-facebook"
+                                                                                          aria-hidden="true"></i></a>
+                    <a href="https://github.com/MarlikAlmighty/" target="_blank"><i class="fa fa-github"
+                                                                                    aria-hidden="true"></i></a>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="section__footer"></div>
+</section>
 <section id="contacts" class="contacts">
     <div class="container">
         <div class="contacts__title__v1"><h2>SEND MESSAGE</h2>
@@ -192,6 +248,7 @@
             </div>
         </div>
     </div>
+    <div class="section__footer"></div>
 </section>
 <script src="site.js" charset="utf-8"></script>
 </body>
