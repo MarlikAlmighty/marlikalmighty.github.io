@@ -8,7 +8,7 @@
     <meta name="keywords" content="Адаптивные, кроссбраузерные, сайты">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-    <style>.loaderArea{background:#000;overflow:hidden;margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;z-index:100000}.loader{margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;-moz-transform:translateY(-50%);-moz-transform:translateX(-50%);-ms-transform:translateY(-50%);-ms-transform:translateX(-50%);-webkit-transform:translateY(-50%);-webkit-transform:translateX(-50%);-o-transform:translateY(-50%);-o-transform:translateX(-50%);transfrom:translateY(-50%);transform:translateX(-50%);border:16px solid #f3f3f3;border-radius:50%;border-top:16px solid transparent;border-bottom:16px solid transparent;width:120px;height:120px;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
+    <style>.loaderArea{background:#0B2312;overflow:hidden;margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;z-index:100000}.loader{margin:auto;position:absolute;top:0;left:0;bottom:0;right:0;-moz-transform:translateY(-50%);-moz-transform:translateX(-50%);-ms-transform:translateY(-50%);-ms-transform:translateX(-50%);-webkit-transform:translateY(-50%);-webkit-transform:translateX(-50%);-o-transform:translateY(-50%);-o-transform:translateX(-50%);transfrom:translateY(-50%);transform:translateX(-50%);border:10px solid #f3f3f3;border-radius:50%;border-top:10px solid transparent;border-bottom:10px solid transparent;width:120px;height:120px;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
     <script src="preloader.js" charset="utf-8"></script>
     <script>
         $(window).on('load', function () {
@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-    <div class="section__footer"></div>
+    <div class="section__space__vertical"></div>
 </section>
 <section id="rates" class="rates">
     <div class="container">
@@ -100,7 +100,7 @@
             </div>
         </div>
     </div>
-    <div class="section__footer"></div>
+    <div class="section__space__vertical"></div>
 </section>
 <section id="portfolio" class="portfolio">
     <div class="container">
@@ -166,12 +166,12 @@
             </div>
         </div>
     </div>
-    <div class="section__footer"></div>
+    <div class="section__space__vertical"></div>
 </section>
 <section id="aboutme" class="aboutme">
     <div class="container">
         <div class="aboutme__title__v1"><h2>ABOUT ME</h2>
-            <p>My skills & resume</p>
+            <p>My skills and resume</p>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -181,25 +181,31 @@
             </div>
             <div class="col-md-6">
                 <div class="aboutme__caption">
-                <h3>Hello I am Marlik</h3>
-                <h4>Full-Stack Web Developer</h4>
+                    <h4>Hello, I am Full Stack Web Developer</h4>
                 </div>
-                <p>I like to create sites. I know HTML5, CSS3, Javascript, jQuery. In my work, I often use some
+                <p>I like to create sites. I know HTML5, CSS3, Javascript and jQuery. In my work, I often use some
                     parts of the Bootstrap framework. As a backend, I use Perl, and in particular the
-                    Mojolicious framework. I use different DBI, worked with SQLite, MySQL and MongoDB.
+                    Mojolicious framework. I use different DB, worked with SQLite, MySQL and MongoDB.
                     I prefer to work remotely and only at a fixed rate.</p>
+                <div class="section__space__vertical"></div>
                 <ul class="social-icon">
-                    <li><a href="https://t.me/MarlikAlmighty/" target="_blank"><i class="fa fa-telegram"
-                                                                                  aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/MarlikAlmighty/" target="_blank"><i class="fa fa-facebook"
-                                                                                              aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/MarlikAlmighty/" target="_blank"><i class="fa fa-github"
-                                                                                        aria-hidden="true"></i></a></li>
+                    <li><a href="https://t.me/MarlikAlmighty/" target="_blank"><i
+                            class="fa fa-telegram icon-sm icon-bg-telegram rounded-x"
+                            aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/MarlikAlmighty/" target="_blank"><i
+                            class="fa fa-facebook icon-sm icon-bg-facebook rounded-x"
+                            aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/MarlikAlmighty/" target="_blank"><i
+                            class="fa fa-github icon-sm icon-bg-github rounded-x"
+                            aria-hidden="true"></i></a></li>
+                    <li><a href="https://vk.com/marlikalmighty/" target="_blank"><i class="fa fa-vk
+                        icon-sm icon-bg-vk rounded-x"
+                                                                                    aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="section__footer"></div>
+    <div class="section__space__vertical"></div>
 </section>
 <section id="contacts" class="contacts">
     <div class="container">
@@ -220,23 +226,17 @@
             <div class="col-md-8">
                 <form name="myform">
                     <label>Name <span class="color-red">*</span></label>
-
                     <input type="text" name="firstname" id="firstname" class="form-control no-rounded" maxlength="50"
                            data-toggle="tooltip" title="The form is not active" required><span
                         id="nametips"></span>
-
                     <label>E-mail <span class="color-red">*</span></label>
-
                     <input type="email" name="mail" id="mail" class="form-control no-rounded" maxlength="50"
                            data-toggle="tooltip" title="The form is not active" required><span
                         id="emailtips"></span>
-
                     <label>Message <span class="color-red">*</span></label>
-
                     <textarea rows="8" name="message" id="message" class="form-control no-rounded"
                               maxlength="1000" data-toggle="tooltip" title="The form is not active"></textarea><span
                         id="messagetips"></span>
-
                     <button type="submit" class="btn-u btn-brd btn-brd-hover btn-u-dark"
                             onclick="alert('Sorry, I do not know how to send a message yet');return false"
                             data-toggle="tooltip" title="The form is not active">Send
@@ -245,7 +245,7 @@
             </div>
         </div>
     </div>
-    <div class="section__footer"></div>
+    <div class="section__space__vertical"></div>
 </section>
 <script src="site.js" charset="utf-8"></script>
 </body>
